@@ -1,10 +1,10 @@
-<!DOCTYPE HTML >
+ï»¿<!DOCTYPE HTML >
 <html lang="ja">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
 <meta http-equiv="Content-Script-Type" content="text/javascript">
 <META http-equiv="Content-Style-Type" content="text/css">
-<title>Ðôîæ£¨ËÒÊÅ£©</title>
+<title>å¥‡è·¡ï¼ˆé–‹è„šï¼‰</title>
 <style type="text/css">
 <!--
 * { font-size:20px; }
@@ -14,7 +14,7 @@ body {
 }
 #guide {
     position:absolute;
-    top:1150px;     /* ¡ç «Ù?«¹?ßÀ ?«µ«¤«ºì¤ß¾ªòò¦ïÒ(?Ù¥ÙþªÎêÈöÇ) */
+    top:1150px;     /* â† ãƒ™?ã‚¹?åƒ ?ã‚µã‚¤ã‚ºä»¥ä¸Šã‚’æŒ‡å®š(?æ˜Žæ–‡ã®ä½ç½®) */
     padding:20px;
 }
 #panel {
@@ -26,8 +26,8 @@ body {
     z-index:100;
     top:0;
     width:320px;
-    left:1600px;     /* ¡ç «Ù?«¹?ßÀ ?«µ«¤«ºªòò¦ïÒ(«Ñ«Í«ëªÎêÈöÇùêªïª») */
-    height:1200px;   /* ¡ç «Ù?«¹?ßÀ ?«µ«¤«ºªòò¦ïÒ(«Ñ«Í«ëªÎêÈöÇùêªïª») */
+    left:1600px;     /* â† ãƒ™?ã‚¹?åƒ ?ã‚µã‚¤ã‚ºã‚’æŒ‡å®š(ãƒ‘ãƒãƒ«ã®ä½ç½®åˆã‚ã›) */
+    height:1200px;   /* â† ãƒ™?ã‚¹?åƒ ?ã‚µã‚¤ã‚ºã‚’æŒ‡å®š(ãƒ‘ãƒãƒ«ã®ä½ç½®åˆã‚ã›) */
 }
 #panel p { text-align:center; }
 #panel p, #img-list table {
@@ -53,33 +53,33 @@ body {
 </div><!-- /#img-body -->
 <div id="panel">
 <p>
-<input type="button" value="?ßÀªÎÜÁðí" id="submitbutton" />
+<input type="button" value="?åƒã®ä¿å­˜" id="submitbutton" />
 <select id="set-list" onchange="setSelected()">
-<!-- øúãÆ«»«Ã«È -->
-<option selected>Õ£</option>
-<option>ð¤Ü×</option>
-<option>ØªÛöá´Ò³</option>
-<option>«Ó«Ã«Á</option>
-<option>«»?«é?</option>
-<option>«Ê?«¹</option>
-<option>«Ð«Ë?</option>
-<option>«Á«¢«¬?«ë</option>
-<option>«á«¤«É</option>
-<option>«Ó?«¹«È</option>
-<option>«Ü«ó«Ç?«¸</option>
-<option>â©ó·</option>
-<option>«¨«íâ©ó·</option>
-<option>Òïâ©ó·</option>
-<option>«¹«¯â©</option>
-<option>«ê«ê«««ë</option>
-<option>ü£Êªëýß×</option>
-<option>«»«¤«Ð?</option>
-<option>10ñ²Ò´</option>
-<!-- øúãÆ«»«Ã«Èª³ª³ªÞªÇ -->
+<!-- è¡¨ç¤ºã‚»ãƒƒãƒˆ -->
+<option selected>è£¸</option>
+<option>åˆ¶æœ</option>
+<option>é­”æ³•å°‘å¥³</option>
+<option>ãƒ“ãƒƒãƒ</option>
+<option>ã‚»?ãƒ©?</option>
+<option>ãƒŠ?ã‚¹</option>
+<option>ãƒãƒ‹?</option>
+<option>ãƒã‚¢ã‚¬?ãƒ«</option>
+<option>ãƒ¡ã‚¤ãƒ‰</option>
+<option>ãƒ“?ã‚¹ãƒˆ</option>
+<option>ãƒœãƒ³ãƒ‡?ã‚¸</option>
+<option>æ°´ç€</option>
+<option>ã‚¨ãƒ­æ°´ç€</option>
+<option>ç´æ°´ç€</option>
+<option>ã‚¹ã‚¯æ°´</option>
+<option>ãƒªãƒªã‚«ãƒ«</option>
+<option>èŠ±å«è¡£è£³</option>
+<option>ã‚»ã‚¤ãƒ?</option>
+<option>10å‘¨å¹´</option>
+<!-- è¡¨ç¤ºã‚»ãƒƒãƒˆã“ã“ã¾ã§ -->
 </select>
 </p>
 <p>
-Üô÷âÙ¥Óø <select id="opacity-list" onchange="opacitySelected()">
+ä¸é€æ˜Žåº¦ <select id="opacity-list" onchange="opacitySelected()">
 <option selected value="100">100%</option>
 <option value="90">90%</option>
 <option value="80">80%</option>
@@ -90,17 +90,17 @@ body {
 <option value="30">30%</option>
 <option value="20">20%</option>
 <option value="10">10%</option>
-<!-- 0% ªËªÏÚ±?? -->
+<!-- 0% ã«ã¯æœª?? -->
 </select>
 </p>
 <div id="img-list">
-<!-- ?ßÀ?ªß?ªßý­¡¢ª³ªÎÙþßöªÏÞûð¶ªµªìªÞª¹ -->
-<p>?ªß?ªßñéªÇª¹¡£ªÁªçªÃªÈªÞªÃªÆªÍ¡¦¡£</p>
-<p>¡Øª­ª»ª«ª¨ªËªÏ Internet Explorer 5.0 / Netscape 6 ì¤Ë½ªÊªÉªÎDHTML??«Ö«é«¦«¶ª¬ù±é©ªÇª¹¡£</p>
-<p>¡Øª­ª»ª«ª¨?ßÀªÎÜÁðíªËªÏ canvas??«Ö«é«¦«¶ª¬ù±é©ªÇª¹¡£</p>
+<!-- ?åƒ?ã¿?ã¿å¾Œã€ã“ã®æ–‡æ›¸ã¯å‰Šé™¤ã•ã‚Œã¾ã™ -->
+<p>?ã¿?ã¿ä¸­ã§ã™ã€‚ã¡ã‚‡ã£ã¨ã¾ã£ã¦ã­â€¦ã€‚</p>
+<p>â€»ãã›ã‹ãˆã«ã¯ Internet Explorer 5.0 / Netscape 6 ä»¥é™ãªã©ã®DHTML??ãƒ–ãƒ©ã‚¦ã‚¶ãŒå¿…è¦ã§ã™ã€‚</p>
+<p>â€»ãã›ã‹ãˆ?åƒã®ä¿å­˜ã«ã¯ canvas??ãƒ–ãƒ©ã‚¦ã‚¶ãŒå¿…è¦ã§ã™ã€‚</p>
 </div>
-<p title="«Õ«§?«É?ÍýªÎON/OFFàâïÒ¡£??ªÏIEªÎªßªÇª¹" style="display:none">
-?Íý: <input type="radio" name="effect-sw" value="" id="effect-on">ON
+<p title="ãƒ•ã‚§?ãƒ‰?æžœã®ON/OFFè¨­å®šã€‚??ã¯IEã®ã¿ã§ã™" style="display:none">
+?æžœ: <input type="radio" name="effect-sw" value="" id="effect-on">ON
 <input type="radio" name="effect-sw" value="" checked>OFF 
 </p>
 </div><!-- /#panel --><!-- /#guide -->
